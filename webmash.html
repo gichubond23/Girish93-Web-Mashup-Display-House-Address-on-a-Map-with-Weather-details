@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="webmash.css">
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta charset="utf-8"/>
+ 
+    
+  </head>
+  <body onload = "initMap()">   
+  <h1>WEBMASH:Location and Weather Detector</h1>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ127_1Ao543UiAZ9Kuun_aw-eKoKJDsE&callback=initMap" type="text/javascript"></script>                       
+    <div id="map" style="width: 600px; height: 500px;"></div><br/>
+    <div id="output">&nbsp;
+    <p>Click on the map to find the weather of a location and view the results in the textarea below</p>
+    <textarea placeholder="Results:" id="outputtxt" rows=50 cols=50></textarea><br>
+    </div>
+    <button type="button" id="btn" onClick="remove()">Clear</button>
+    <script type="text/javascript" src="webmash.js"> </script>   
+  </body>
+</html>
+
+
